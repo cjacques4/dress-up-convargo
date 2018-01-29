@@ -2,12 +2,48 @@
 <html>
   
 <head>
+  <style>
+body {background-color: #92a8d1;}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  </style>
+
   <title>CSS/HTML Workshop with Convargo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 
@@ -18,11 +54,8 @@
 </p>
   </div>
   <p>La plateforme permet aux professionnels d'expédier leur marchandise dans toute l'Europe en quelques clics. Renseignez vos besoins d'expédition, obtenez un prix fixe et accédez à plus de 2 500 transporteurs de qualité.</p>      
-  <p>Calculez votre prix de livraison :</p>      
-</div>
-  <body>
-
-<div class="row">
+  <p>Calculez votre prix de livraison :</p>  
+  <div class="row">
   <div class="col-6 col-md-4">
   <input class="name" type="text" placeholder="Trucker name"/>
   </div>
@@ -59,7 +92,16 @@
   </label>
 </div>
 
-    <button type="button" id="compute" class="btn btn-outline-success">Compute</button>
+
+    <button class="button button3">Compute</button>  
+
+</div>
+<img src="convargo.jpg" alt="convargologo">
+  <body>
+
+
+
+    
     <div id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
